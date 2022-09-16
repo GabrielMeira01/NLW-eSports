@@ -14,7 +14,7 @@ model Game {
   id        String @id @default(uuid())
   title     String
   bannerUrl String
-  ad        Ad[]
+  ads       Ad[]
 }
 
 model Ad {
@@ -24,8 +24,8 @@ model Ad {
   yearPlaying     Int
   discord         String
   weekDays        String
-  hoursStart      Int
-  hoursEnd        Int
+  hourStart       Int
+  hourEnd         Int
   UseVoiceChannel Boolean
   createAt        DateTime @default(now())
 
